@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import {NextFont} from "next/dist/compiled/@next/font";
+import { Header } from "@/components/shared/header"
 
 const nunito:NextFont = Nunito({
 
@@ -25,6 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={nunito.className}>
         <main className='min-h-screen'>
+          <Header />
           {children}
         </main>
       </body>
