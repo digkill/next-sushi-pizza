@@ -1,11 +1,15 @@
 import Image from "next/image";
-import {Button} from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
+import { Categories, Container, SortPopup, Title } from "@/components/shared";
+import { TopBar } from "@/components/shared/top-bar";
 
 export default function Home() {
   return (
-      <>
-        <h1>Home page</h1>
-        <Button variant="outline">Card</Button>
-      </>
+    <>
+      <Container className="mt-10">
+        <Title text="Суши и пицца" size="lg" className="font-extrabold" />
+      </Container>
+      <TopBar />
+    </>
   );
 }
