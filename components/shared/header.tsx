@@ -11,8 +11,8 @@ interface Props {
 
 export const Header: React.FC<Props> = ({ className }) => {
     return (
-        <header className={cn('border border-b', className)}>
-            <Container>
+        <header className={cn('border-b', className)}>
+            <Container className="flex items-center justify-between py-8">
                 {/* Left part */}
                 <div className="flex items-center gap-4">
                     <Image src="/logo.png" alt="Logo" width={35} height={35} />
